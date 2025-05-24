@@ -15,16 +15,16 @@ config/description="A demo of my compute-helper plugin running a slime-mold simu
 config/version="1.0"
 config/tags=PackedStringArray("educational")
 run/main_scene="res://slime/slime_root.tscn"
-config/features=PackedStringArray("4.3", "Forward Plus")
-run/max_fps=60
+config/features=PackedStringArray("4.5", "Forward Plus")
 boot_splash/bg_color=Color(0, 0, 0, 1)
-boot_splash/image="res://resources/theme/logo.png"
 boot_splash/fullsize=false
 boot_splash/use_filter=false
+boot_splash/image="res://resources/theme/logo.png"
 config/icon="res://resources/theme/logo.png"
 
 [debug]
 
+settings/stdout/print_fps=true
 gdscript/warnings/integer_division=0
 gdscript/warnings/narrowing_conversion=0
 
@@ -33,6 +33,7 @@ gdscript/warnings/narrowing_conversion=0
 window/size/viewport_width=1280
 window/size/viewport_height=720
 window/stretch/mode="canvas_items"
+window/vsync/vsync_mode=0
 
 [editor]
 

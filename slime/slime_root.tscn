@@ -1,10 +1,11 @@
-[gd_scene load_steps=7 format=3 uid="uid://bxena148uhb2t"]
+[gd_scene load_steps=8 format=3 uid="uid://bxena148uhb2t"]
 
-[ext_resource type="Script" path="res://slime/slime_root.gd" id="1_jgxsl"]
+[ext_resource type="Script" uid="uid://b3vu77goy5uwi" path="res://slime/slime_root.gd" id="1_jgxsl"]
 [ext_resource type="Material" uid="uid://cb3daufwl4lqb" path="res://resources/materials/color-map.material" id="2_h80kl"]
-[ext_resource type="Script" path="res://slime/slime.gd" id="3_l58kq"]
-[ext_resource type="Script" path="res://slime/utils/player.gd" id="4_du2cj"]
-[ext_resource type="Script" path="res://slime/utils/agents.gd" id="5_2puxf"]
+[ext_resource type="Script" uid="uid://btdgst558o8ae" path="res://slime/slime.gd" id="3_l58kq"]
+[ext_resource type="Script" uid="uid://b40qn16sqydy4" path="res://slime/utils/player.gd" id="4_du2cj"]
+[ext_resource type="Script" uid="uid://dv7v77yc3nvo8" path="res://slime/utils/agents.gd" id="5_2puxf"]
+[ext_resource type="Script" uid="uid://bk753dtnpyo4i" path="res://slime/ui.gd" id="6_7aikn"]
 
 [sub_resource type="Texture2DRD" id="Texture2DRD_cjylm"]
 
@@ -26,6 +27,7 @@ script = ExtResource("4_du2cj")
 script = ExtResource("5_2puxf")
 
 [node name="UI" type="CanvasLayer" parent="."]
+script = ExtResource("6_7aikn")
 
 [node name="StartingPanel" type="PanelContainer" parent="UI"]
 anchors_preset = 9
@@ -59,6 +61,7 @@ size_flags_horizontal = 3
 selected = 0
 item_count = 3
 popup/item_0/text = "Disk"
+popup/item_0/id = 0
 popup/item_1/text = "Rectangle"
 popup/item_1/id = 1
 popup/item_2/text = "Single Point"
@@ -74,6 +77,7 @@ size_flags_horizontal = 3
 selected = 0
 item_count = 3
 popup/item_0/text = "Towards Center"
+popup/item_0/id = 0
 popup/item_1/text = "Away From Center"
 popup/item_1/id = 1
 popup/item_2/text = "Random"
@@ -125,10 +129,10 @@ horizontal_alignment = 1
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 1
-min_value = 18.0
-max_value = 22.0
+min_value = 11.0
+max_value = 24.0
 value = 20.0
-tick_count = 5
+tick_count = 12
 
 [node name="Separator3" type="HSeparator" parent="UI/StartingPanel/Margin/Starting"]
 layout_mode = 2
